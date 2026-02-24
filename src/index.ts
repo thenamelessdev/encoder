@@ -1,6 +1,7 @@
+import decode from "./decode.js";
 import encode from "./encode.js";
 
 // @internal
 export const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
-console.log(encode("meow"));
+export default { encode, decode };

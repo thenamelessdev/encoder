@@ -11,15 +11,13 @@ export default function encode(text: string){
     let output = text;
     let rule = "";
 
+    const letterMap: Record<string, string> = {};
     inputLetters.forEach((letter: string, index: number) => {
-        mixedLetters[index] = [letter, outputLetters[index]]
+        letterMap[letter] = outputLetters[index];
+        rule = rule + letter + outputLetters[index];
     });
 
-    
-    mixedLetters.forEach((letterPair: any) => {
-        output = output.replaceAll(letterPair[0], letterPair[1])
-        rule = rule + letterPair[0] + letterPair[1];
-    });
+    output = text.split("").map(char => letterMap[char] ?? char).join("");
 
     return rule + "=" + output;
 }
