@@ -21,5 +21,5 @@ export default function encode(text: string){
         rule = rule + letterPair[0] + letterPair[1];
     });
 
-    return rule + "-" + output;
+    return rule + "=" + output;
 }
