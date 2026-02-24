@@ -1,6 +1,6 @@
 {
   "name": "@thenamelessdev/encoder",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A custom text encoder/decoder for node js",
   "homepage": "https://github.com/thenamelessdev/encoder#readme",
   "bugs": {
